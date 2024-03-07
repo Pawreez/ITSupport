@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Support Form</title>
+    <style>
+        /* Add some basic styling for readability */
+        body {
+            font-family: Arial, sans-serif, bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #0074D9;
+            color: #000000;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Company Name</h1>
+    <form action="/submit" method="post">
+<label for="subject">subject:</label>
+        <input type="text" id="subject" name="subject" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+
+        <label for="company">Company:</label>
+        <input type="text" id="company" name="company" required>
+
+<button type="test">TEst</button>
+		
+<label for="Department">Department:</label>
+        <input type="text" id="Department" name="Department" required>
+		
+		<label for="Equipment">Equipment:</label>
+        <select id="equipment" name="equipment"  >
+            <option value="select">select</option>
+            <option value="laptop">laptop</option>
+            <option value="desktop">Desktop</option>
+            <option value="keyboard">keyboard</option>
+            <option value="mouse">Mouse</option>
+            <option value="software">Software</option>
+        </select   >
+
+<label for="Priority">Priority:</label  select id="equipment" name="equipment">
+        
+		
+
+        <label for="issue">Issue Details:</label>
+        <textarea id="issue" name="issue" rows="2" required></textarea>
+
+        <label for="Priority">Priority:</label>
+        <select id="Priority" name="Priority">
+        <option value="Medium">Medium</option>
+        <option value="Important">Important</option>
+        <option value="Urgent">Urgent</option>
+
+        </select>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
